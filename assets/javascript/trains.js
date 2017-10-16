@@ -37,7 +37,7 @@ $(document).ready(function() {
 		//Code for the push
 		keyHolder = dataRef.push({
 			name: name,
-			destination; destination,
+			destination: destination,
 			firstTrainTime: firstTrainTime,
 			frequency: frequency,
 			nextTrainFormatted: nextTrainFormatted,
@@ -77,7 +77,7 @@ $(document).ready(function() {
 }, function(errorObject){
 	//console.log("Errors handled: " + errorObject.code)
 });
-		
+
 $("body").on("click", ".remove-train", function(){
 			$(this).closest ('tr').remove();
 			getKey = $(this).parent().parent().attr('id');
